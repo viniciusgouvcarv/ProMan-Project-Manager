@@ -3,7 +3,7 @@ ProMan é um gerenciador de projetos onde você pode criar projetos com data de 
 
 Para utilizar o ProMan, você pode rodar o aplicativo "proman.exe" clicando duas vezes, ou se você tiver Python 3.8.0 ou mais recente instalado em sua máquina (que você pode adquirir aqui https://www.python.org/downloads/release/python-382/), você pode abrir seu prompt de comando na pasta onde se encontra o arquivo "proman.py" e rodar o código com "python proman.py" ou "python3 proman.py".
 
-Caso você opte por abrir via terminal, tenha em mente que você precisará instalar psycopg2 e tabulate, normalmente através dos comandos "pip install psycopg2" e "pip install tabulate".
+Caso você opte por abrir via terminal, tenha em mente que você precisará instalar psycopg2, datetime e tabulate, normalmente através dos comandos "pip install psycopg2", "pip install datetime" e "pip install tabulate".
 
 Independente de quais métodos você utilizar para rodar o ProMan, será aberto um terminal com mensagens de saudações e será esperado que você comece a utilizá-lo. Para saber quais comandos o ProMan recebe, digite "ajuda" e pressione enter. Veja qual o retorno desse comando abaixo:
 
