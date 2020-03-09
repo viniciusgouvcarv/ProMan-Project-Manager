@@ -8,17 +8,29 @@ Caso você opte por abrir via terminal, tenha em mente que você precisará inst
 Independente de quais métodos você utilizar para rodar o ProMan, será aberto um terminal com mensagens de saudações e será esperado que você comece a utilizá-lo. Para saber quais comandos o ProMan recebe, digite "ajuda" e pressione enter. Veja qual o retorno desse comando abaixo:
 
 --ajuda: Abre esse menu de comandos
+
 --sair: Desloga do sistema de maneira segura
+
 --criar projeto: Abre o menu para você criar um novo projeto
+
 --listar projetos: Lista todos os seus projetos atuais de acordo com a data e o horário de entrega (dos mais próximos aos mais distantes)
+
 --editar projeto: Abre o menu para você selecionar um projeto e editá-lo
+
 --atualizar projeto: Abre o menu para você selecionar um projeto e atualizá-lo
+
 --excluir projeto: Abre o menu para você selecionar um projeto e exclui-lo
+
 --buscar tarefas: Abre o menu para buscar tarefas dentre todos os projetos
+
 --criar tarefa: Abre o menu para você criar uma nova tarefa
+
 --listar tarefas: Lista todas as tarefas relacionadas a um projeto
+
 --editar tarefa: Abre o menu para você selecionar uma tarefa e editá-la
+
 --atualizar tarefa: Abre o menu para você selecionar uma tarefa e atualizar-la
+
 --excluir tarefa: Abre o menu para você selecionar uma tarefa e exclui-la
 
 Então, por exemplo, para criar um novo projeto, digite "criar projeto", então, preencha corretamente os campos requisitados. Como título e data, e se haverá horário de entrega ou observação.
