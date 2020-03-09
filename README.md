@@ -1,4 +1,4 @@
-# ProMan-Project-Manager
+﻿# ProMan-Project-Manager
 ProMan é um gerenciador de projetos onde você pode criar projetos com data de entrega e título (obrigatórios) e observações, horário de entrega e tarefas (opcionais)!
 
 Para utilizar o ProMan, você pode rodar o aplicativo "proman.exe" clicando duas vezes, ou se você tiver Python 3.8.0 ou mais recente instalado em sua máquina (que você pode adquirir aqui https://www.python.org/downloads/release/python-382/), você pode abrir seu prompt de comando na pasta onde se encontra o arquivo "proman.py" e rodar o código com "python proman.py" ou "python3 proman.py".
@@ -17,8 +17,6 @@ Independente de quais métodos você utilizar para rodar o ProMan, será aberto 
 
 --editar projeto: Abre o menu para você selecionar um projeto e editá-lo
 
---atualizar projeto: Abre o menu para você selecionar um projeto e atualizá-lo
-
 --excluir projeto: Abre o menu para você selecionar um projeto e exclui-lo
 
 --buscar tarefas: Abre o menu para buscar tarefas dentre todos os projetos
@@ -28,8 +26,6 @@ Independente de quais métodos você utilizar para rodar o ProMan, será aberto 
 --listar tarefas: Lista todas as tarefas relacionadas a um projeto
 
 --editar tarefa: Abre o menu para você selecionar uma tarefa e editá-la
-
---atualizar tarefa: Abre o menu para você selecionar uma tarefa e atualizar-la
 
 --excluir tarefa: Abre o menu para você selecionar uma tarefa e exclui-la
 

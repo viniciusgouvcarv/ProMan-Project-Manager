@@ -14,7 +14,7 @@ options = {
 setup(
     name = "ProMan - Project Manager",
     options = options,
-    version = "0.0.2",
+    version = "0.0.3",
     description = 'O seu Gerenciador de Projetos favorito!',
     executables = executables
 )

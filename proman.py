@@ -47,9 +47,6 @@ def texto(txt=None, vazio=False, isVariable=False):
             elif 'editar p' in i:
                 editar_projeto()
 
-            elif 'atualizar p' in i:
-                atualizar_projetos()
-
             elif 'listar p' in i:
                 listar_projetos()
 
@@ -64,9 +61,6 @@ def texto(txt=None, vazio=False, isVariable=False):
 
             elif 'editar t' in i:
                 editar_tarefa()
-
-            elif 'atualizar t' in i:
-                atualizar_tarefas()
 
             elif 'listar t' in i:
                 listar_tarefas()
@@ -143,13 +137,11 @@ def ajuda():
     print('--criar projeto: Abre o menu para você criar um novo projeto')
     print('--listar projetos: Lista todos os seus projetos atuais de acordo com a data e o horário de entrega (dos mais próximos aos mais distantes)')
     print('--editar projeto: Abre o menu para você selecionar um projeto e editá-lo')
-    print('--atualizar projeto: Abre o menu para você selecionar um projeto e atualizá-lo')
     print('--excluir projeto: Abre o menu para você selecionar um projeto e exclui-lo')
     print('--buscar tarefas: Abre o menu para buscar tarefas dentre todos os projetos')
     print('--criar tarefa: Abre o menu para você criar uma nova tarefa')
     print('--listar tarefas: Lista todas as tarefas relacionadas a um projeto')
     print('--editar tarefa: Abre o menu para você selecionar uma tarefa e editá-la')
-    print('--atualizar tarefa: Abre o menu para você selecionar uma tarefa e atualizar-la')
     print('--excluir tarefa: Abre o menu para você selecionar uma tarefa e exclui-la')
     print('')
     texto()
@@ -340,12 +332,6 @@ def editar_projeto():
     cur = con.cursor()
     texto()
 
-## ATUALIZA PROJETOS
-def atualizar_projetos():
-    global cur
-    texto('Atualizar projetos!')
-    texto()
-
 ## EXCLUI UM PROJETO
 def excluir_projeto():
     global cur
@@ -532,11 +518,6 @@ def editar_tarefa():
 
     con = psycopg2.connect(database='d77fge1uko3ish', user='nompkqfhfxxlhj', host='ec2-3-231-46-238.compute-1.amazonaws.com', password='b986629a71a7d3b487bfc5ee0a82496b5fbd29362c1bdec27d915f66bf6b3bab', port = 5432)
     cur = con.cursor()
-    texto()
-
-def atualizar_tarefas():
-    global cur
-    texto('Atualizar tarefas!')
     texto()
 
 ## EXCLUI UMA TAREFA
