@@ -506,19 +506,20 @@ def editar_tarefa():
             print('')
             texto()
 
-        ## PARA CADA COLUNA, DÁ UMA ALTERNATIVA DIFERENTE DE EDIÇÃO
-        if coluna == 'titulo_projeto':
-            alteracao = texto('Agora, digite o novo título.', isVariable=True)
-        
-        elif coluna == 'obs_tarefa':
+        ## PARA CADA COLUNA, DÁ UMA ALTERNATIVA DIFERENTE DE EDIÇÃO        
+        if coluna == 'obs_tarefa':
             alteracao = texto('Agora, digite a nova observação, ou só aperte enter para apagar a anterior.', isVariable=True)
 
+        else:
+            alteracao = texto('Agora, digite o novo título.', isVariable=True)
+
+
         ## DEFINE A TAREFA QUE VAI SER EDITADA
-        dado = texto('Por favor, digite a ID da tarefa que você quer editar. (ex: "id 3")', isVariable=True)
+        dado = texto('Por favor, digite a ID da tarefa que você quer editar. (ex: "3")', isVariable=True)
         
         try:
-            valor_condicao = dado[3:]
-
+            dado = int(dado)
+            valor_condicao = str(dado)
         except:
             print('Comando não entendido.')
             print('')

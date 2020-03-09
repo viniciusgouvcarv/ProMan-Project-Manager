@@ -2,7 +2,7 @@ from cx_Freeze import setup, Executable
 
 base = None    
 
-executables = [Executable("proman.py", base=base, icon="project.png")]
+executables = [Executable("proman.py", base=base)]
 
 packages = ["idna", "sys", "psycopg2", "datetime", "tabulate", "time"]
 options = {
@@ -14,7 +14,7 @@ options = {
 setup(
     name = "ProMan - Project Manager",
     options = options,
-    version = "0.1",
+    version = "0.0.2",
     description = 'O seu Gerenciador de Projetos favorito!',
     executables = executables
 )
