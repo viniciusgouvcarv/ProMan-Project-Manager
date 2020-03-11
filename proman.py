@@ -91,7 +91,8 @@ def iniciar():
         sleep(3)
                 
         try:
-            con = psycopg2.connect(database='d77fge1uko3ish', user='nompkqfhfxxlhj', host='ec2-3-231-46-238.compute-1.amazonaws.com', password='b986629a71a7d3b487bfc5ee0a82496b5fbd29362c1bdec27d915f66bf6b3bab', port = 5432)
+            con = psycopg2.connect(database='dd0m4tompu4r1q', user='ifktkqglwzqhkr', host='ec2-184-72-236-57.compute-1.amazonaws.com', password='4c49731894ff00c23a2e859e39d14e3375ed69c23cf9bac31c2db0eef4f89f97', port = 5432)
+            #print(type(con))
             cur = con.cursor()
             print("Nós sentimos a sua falta! ;)")
             print('')
@@ -106,6 +107,9 @@ def iniciar():
                     print(f'Error {e}')
                     print('')
                     sys.exit()
+            
+        except:
+            print('Aconteceu algum erro, por favor, tente novamente mais tarde.')
         
         ## CRIA AS TABELAS, SE JÁ NÃO EXISTIREM
         cur.execute("""CREATE TABLE IF NOT EXISTS tbl_projects (
