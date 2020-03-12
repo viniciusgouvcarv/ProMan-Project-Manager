@@ -92,7 +92,6 @@ def iniciar():
                 
         try:
             con = psycopg2.connect(database='dd0m4tompu4r1q', user='ifktkqglwzqhkr', host='ec2-184-72-236-57.compute-1.amazonaws.com', password='4c49731894ff00c23a2e859e39d14e3375ed69c23cf9bac31c2db0eef4f89f97', port = 5432)
-            #print(type(con))
             cur = con.cursor()
             print("Nós sentimos a sua falta! ;)")
             print('')
@@ -196,7 +195,7 @@ def criar_projeto():
 
         con.commit()
 
-    con = psycopg2.connect(database='d77fge1uko3ish', user='nompkqfhfxxlhj', host='ec2-3-231-46-238.compute-1.amazonaws.com', password='b986629a71a7d3b487bfc5ee0a82496b5fbd29362c1bdec27d915f66bf6b3bab', port = 5432)
+    con = psycopg2.connect(database='dd0m4tompu4r1q', user='ifktkqglwzqhkr', host='ec2-184-72-236-57.compute-1.amazonaws.com', password='4c49731894ff00c23a2e859e39d14e3375ed69c23cf9bac31c2db0eef4f89f97', port = 5432)
     cur = con.cursor()
     texto()
     
@@ -332,7 +331,7 @@ def editar_projeto():
 
         print('Projeto alterado com sucesso!')
 
-    con = psycopg2.connect(database='d77fge1uko3ish', user='nompkqfhfxxlhj', host='ec2-3-231-46-238.compute-1.amazonaws.com', password='b986629a71a7d3b487bfc5ee0a82496b5fbd29362c1bdec27d915f66bf6b3bab', port = 5432)
+    con = psycopg2.connect(database='dd0m4tompu4r1q', user='ifktkqglwzqhkr', host='ec2-184-72-236-57.compute-1.amazonaws.com', password='4c49731894ff00c23a2e859e39d14e3375ed69c23cf9bac31c2db0eef4f89f97', port = 5432)
     cur = con.cursor()
     texto()
 
@@ -370,7 +369,7 @@ def excluir_projeto():
         print('')
         con.commit()
     
-    con = psycopg2.connect(database='d77fge1uko3ish', user='nompkqfhfxxlhj', host='ec2-3-231-46-238.compute-1.amazonaws.com', password='b986629a71a7d3b487bfc5ee0a82496b5fbd29362c1bdec27d915f66bf6b3bab', port = 5432)
+    con = psycopg2.connect(database='dd0m4tompu4r1q', user='ifktkqglwzqhkr', host='ec2-184-72-236-57.compute-1.amazonaws.com', password='4c49731894ff00c23a2e859e39d14e3375ed69c23cf9bac31c2db0eef4f89f97', port = 5432)
     cur = con.cursor()
     texto()
 
@@ -420,7 +419,7 @@ def criar_tarefa():
             print('')
         con.commit()
 
-    con = psycopg2.connect(database='d77fge1uko3ish', user='nompkqfhfxxlhj', host='ec2-3-231-46-238.compute-1.amazonaws.com', password='b986629a71a7d3b487bfc5ee0a82496b5fbd29362c1bdec27d915f66bf6b3bab', port = 5432)
+    con = psycopg2.connect(database='dd0m4tompu4r1q', user='ifktkqglwzqhkr', host='ec2-184-72-236-57.compute-1.amazonaws.com', password='4c49731894ff00c23a2e859e39d14e3375ed69c23cf9bac31c2db0eef4f89f97', port = 5432)
     cur = con.cursor()
     texto()
 
@@ -520,7 +519,7 @@ def editar_tarefa():
         cur.execute(sql_edicao)
         con.commit()
 
-    con = psycopg2.connect(database='d77fge1uko3ish', user='nompkqfhfxxlhj', host='ec2-3-231-46-238.compute-1.amazonaws.com', password='b986629a71a7d3b487bfc5ee0a82496b5fbd29362c1bdec27d915f66bf6b3bab', port = 5432)
+    con = psycopg2.connect(database='dd0m4tompu4r1q', user='ifktkqglwzqhkr', host='ec2-184-72-236-57.compute-1.amazonaws.com', password='4c49731894ff00c23a2e859e39d14e3375ed69c23cf9bac31c2db0eef4f89f97', port = 5432)
     cur = con.cursor()
     texto()
 
